@@ -1,0 +1,9 @@
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\bin\Debug\netcoreapp3.1\DotinBankProject.Core.deps.json
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\bin\Debug\netcoreapp3.1\DotinBankProject.Core.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\bin\Debug\netcoreapp3.1\DotinBankProject.Core.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\netcoreapp3.1\DotinBankProject.Core.csprojAssemblyReference.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\netcoreapp3.1\DotinBankProject.Core.AssemblyInfoInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\netcoreapp3.1\DotinBankProject.Core.AssemblyInfo.cs
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\netcoreapp3.1\DotinBankProject.Core.csproj.CoreCompileInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\netcoreapp3.1\DotinBankProject.Core.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\netcoreapp3.1\DotinBankProject.Core.pdb
