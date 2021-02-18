@@ -1,7 +1,7 @@
 using DotinBankProject.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotinBank.Data.Mapping
+namespace DotinBankProject.Infrastructure.Data.Mapping
 {
     public class RoleMap
         : IEntityTypeConfiguration<Role>
@@ -36,12 +36,12 @@ namespace DotinBank.Data.Mapping
             builder.Property(t => t.IsDeleted)
                 .IsRequired()
                 .HasColumnName("IsDeleted")
-                .HasColumnType("nchar(10)")
-                .HasMaxLength(10);
+                .HasColumnType("bit")
+                .HasDefaultValueSql("((0))");
 
             // relationships
             #endregion
         }
-        
+
     }
 }

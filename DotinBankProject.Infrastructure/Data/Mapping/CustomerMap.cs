@@ -1,7 +1,7 @@
 using DotinBankProject.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotinBank.Data.Mapping
+namespace DotinBankProject.Infrastructure.Data.Mapping
 {
     public class CustomerMap
         : IEntityTypeConfiguration<Customer>
@@ -39,10 +39,8 @@ namespace DotinBank.Data.Mapping
                 .HasColumnName("PhoneNumber")
                 .HasColumnType("nvarchar(20)")
                 .HasMaxLength(20);
-           
-
             // relationships
-           
+
             #endregion
         }
 

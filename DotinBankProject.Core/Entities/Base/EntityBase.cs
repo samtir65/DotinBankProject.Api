@@ -1,6 +1,4 @@
-﻿using DotinSampleProject.Core.Entities.Base;
-
-namespace DotinBankProject.Core.Entities.Base
+﻿namespace DotinBankProject.Core.Entities.Base
 {
     public abstract class EntityBase<TId> : IEntityBase<TId>
     {

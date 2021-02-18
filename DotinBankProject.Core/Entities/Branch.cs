@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using DotinBankProject.Core.Entities.Base;
-using DotinSampleProject.Core.Entities.Base;
 
 namespace DotinBankProject.Core.Entities
 {

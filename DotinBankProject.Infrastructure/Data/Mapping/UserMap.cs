@@ -1,7 +1,7 @@
 using DotinBankProject.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotinBank.Data.Mapping
+namespace DotinBankProject.Infrastructure.Data.Mapping
 {
     public class UserMap
         : IEntityTypeConfiguration<User>
@@ -28,6 +28,7 @@ namespace DotinBank.Data.Mapping
                 .HasColumnType("int");
 
             builder.Property(t => t.Email)
+                .IsRequired()
                 .HasColumnName("Email")
                 .HasColumnType("nvarchar(50)")
                 .HasMaxLength(50);
@@ -41,12 +42,14 @@ namespace DotinBank.Data.Mapping
             builder.Property(t => t.IsActive)
                 .IsRequired()
                 .HasColumnName("IsActive")
-                .HasColumnType("bit");
+                .HasColumnType("bit")
+                .HasDefaultValueSql("((1))");
 
             builder.Property(t => t.IsDeleted)
                 .IsRequired()
                 .HasColumnName("IsDeleted")
-                .HasColumnType("bit");
+                .HasColumnType("bit")
+                .HasDefaultValueSql("((0))");
 
             // relationships
             builder.HasOne(t => t.Role)

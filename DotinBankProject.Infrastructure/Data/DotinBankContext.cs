@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using DotinBankProject.Core.Entities;
+using DotinBankProject.Infrastructure.Data.Mapping;
 
-namespace DotinBank.Data
+namespace DotinBankProject.Infrastructure.Data
 {
     public class DotinBankContext : DbContext
     {
@@ -26,8 +27,18 @@ namespace DotinBank.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region Generated Configuration
-            modelBuilder.ApplyConfiguration(new DotinBank.Data.Mapping.RoleMap());
-            modelBuilder.ApplyConfiguration(new DotinBank.Data.Mapping.UserMap());
+            modelBuilder.ApplyConfiguration(new UserMap());
+            modelBuilder.ApplyConfiguration(new AccountTypeMap());
+            modelBuilder.ApplyConfiguration(new RoleMap());
+            modelBuilder.ApplyConfiguration(new RealCustomerMap());
+            modelBuilder.ApplyConfiguration(new LegalCustomerMap());
+            modelBuilder.ApplyConfiguration(new AccountMap());
+            modelBuilder.ApplyConfiguration(new AccountingDocumentMap());
+            modelBuilder.ApplyConfiguration(new CustomersAccountMap());
+            modelBuilder.ApplyConfiguration(new BranchMap());
+            modelBuilder.ApplyConfiguration(new CustomersAccountMap());
+            modelBuilder.ApplyConfiguration(new CustomerMap());
+           
             #endregion
         }
     }

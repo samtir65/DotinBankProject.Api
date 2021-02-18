@@ -1,4 +1,4 @@
-﻿namespace DotinSampleProject.Core.Entities.Base
+﻿namespace DotinBankProject.Core.Entities.Base
 {
     public interface IEntityBase<out TId>
     {

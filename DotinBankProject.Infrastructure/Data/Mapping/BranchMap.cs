@@ -1,7 +1,7 @@
 using DotinBankProject.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotinBank.Data.Mapping
+namespace DotinBankProject.Infrastructure.Data.Mapping
 {
     public class BranchMap
         : IEntityTypeConfiguration<Branch>
