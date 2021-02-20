@@ -11,7 +11,7 @@ namespace DotinBankProject.Infrastructure.Data.Mapping
             #region Generated Configure
             // table
             builder.ToTable("Customer", "dbo");
-
+           
             builder.Property(t => t.FirstName)
                 .IsRequired()
                 .HasColumnName("FirstName")

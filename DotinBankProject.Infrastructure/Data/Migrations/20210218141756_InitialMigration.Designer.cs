@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotinBankProject.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(DotinBankContext))]
-    [Migration("20210218114846_initialMigration")]
-    partial class initialMigration
+    [Migration("20210218141756_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

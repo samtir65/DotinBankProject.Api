@@ -19,8 +19,8 @@ namespace DotinBankProject.Infrastructure.Data
         public virtual DbSet<AccountType> AccountTypes { get; set; }
         public virtual DbSet<AccountingDocument> AccountingDocuments { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
-        public virtual DbSet<LegalCustomer> LegalCustomers { get; set; }
-        public virtual DbSet<RealCustomer> RealCustomers { get; set; }
+        //public virtual DbSet<LegalCustomer> LegalCustomers { get; set; }
+       // public virtual DbSet<RealCustomer> RealCustomers { get; set; }
         public virtual DbSet<CustomersAccount> CustomersAccounts { get; set; }
 
         #endregion
