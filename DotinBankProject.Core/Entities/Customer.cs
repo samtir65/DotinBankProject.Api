@@ -1,10 +1,11 @@
 ﻿using DotinBankProject.Core.Entities.Enums;
 using System.Collections.Generic;
 using DotinBankProject.Core.Entities.Base;
+using System;
 
 namespace DotinBankProject.Core.Entities
 {
-    public class Customer:Entity
+    public abstract class Customer:TEntity
     {
        
         public Customer()
@@ -26,6 +27,8 @@ namespace DotinBankProject.Core.Entities
         #region RelationShips
         public virtual ICollection<AccountingDocument> AccountingDocuments { get; set; }
         public virtual ICollection<CustomersAccount> CustomersAccounts { get; set; }
+
+        public abstract bool HasDiscriminator(Func<object, object> p);
         #endregion
 
     }

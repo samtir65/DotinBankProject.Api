@@ -16,8 +16,11 @@ namespace DotinBankProject.Infrastructure.Data.Services
         }
         public void Add(TEntity entity)
         {
-             _context.Set<TEntity>().Add(entity);
+            _context.Set<TEntity>().Add(entity);
+            
+
         }
+
 
         public void AddRange(IEnumerable<TEntity> entities)
         {
@@ -47,6 +50,11 @@ namespace DotinBankProject.Infrastructure.Data.Services
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
             _context.Set<TEntity>().RemoveRange(entities);
+        }
+
+        public void Save()
+        {
+            _context.SaveChanges();
         }
     }
 }

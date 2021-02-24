@@ -2,7 +2,7 @@ using DotinBankProject.Core.Entities.Base;
 
 namespace DotinBankProject.Core.Entities
 {
-    public class User: Entity
+    public class User: TEntity
     {
         public User()
         {

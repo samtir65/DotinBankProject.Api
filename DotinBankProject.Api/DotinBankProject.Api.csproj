@@ -14,11 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotinBankProject.Application\DotinBankProject.Application.csproj" />
+    <ProjectReference Include="..\DotinBankProject.Core\DotinBankProject.Core.csproj" />
     <ProjectReference Include="..\DotinBankProject.Infrastructure\DotinBankProject.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

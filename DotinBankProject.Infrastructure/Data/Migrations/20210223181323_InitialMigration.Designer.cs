@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DotinBankProject.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(DotinBankContext))]
-    [Migration("20210218141756_InitialMigration")]
+    [Migration("20210223181323_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -161,10 +161,6 @@ namespace DotinBankProject.Infrastructure.Data.Migrations
                     b.Property<int>("CustomerType")
                         .HasColumnType("int");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("MobileNumber")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -181,7 +177,7 @@ namespace DotinBankProject.Infrastructure.Data.Migrations
 
                     b.ToTable("Customer", "dbo");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Customer");
+                    b.HasDiscriminator<int>("CustomerType");
                 });
 
             modelBuilder.Entity("DotinBankProject.Core.Entities.CustomersAccount", b =>
@@ -299,7 +295,7 @@ namespace DotinBankProject.Infrastructure.Data.Migrations
 
                     b.ToTable("Customer", "dbo");
 
-                    b.HasDiscriminator().HasValue("LegalCustomer");
+                    b.HasDiscriminator().HasValue(1);
                 });
 
             modelBuilder.Entity("DotinBankProject.Core.Entities.RealCustomer", b =>
@@ -332,7 +328,7 @@ namespace DotinBankProject.Infrastructure.Data.Migrations
 
                     b.ToTable("Customer", "dbo");
 
-                    b.HasDiscriminator().HasValue("RealCustomer");
+                    b.HasDiscriminator().HasValue(0);
                 });
 
             modelBuilder.Entity("DotinBankProject.Core.Entities.Account", b =>

@@ -50,7 +50,6 @@ namespace DotinBankProject.Infrastructure.Data.Migrations
                     MobileNumber = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     CustomerType = table.Column<int>(type: "int", nullable: false),
-                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CompanyNumber = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     CompanyName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     FirstName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),

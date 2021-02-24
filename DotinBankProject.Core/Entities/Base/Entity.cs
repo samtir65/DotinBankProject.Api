@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotinBankProject.Core.Entities.Base
 {
-    public abstract class Entity : EntityBase<int>
+    public abstract class TEntity : EntityBase<int>
     {
     }
 }

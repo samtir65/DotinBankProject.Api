@@ -2,7 +2,7 @@
 
 namespace DotinBankProject.Core.Entities
 {
-    public class CustomersAccount:Entity
+    public class CustomersAccount:TEntity
     {
         
         public CustomersAccount()

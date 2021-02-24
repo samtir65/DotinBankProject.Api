@@ -39,11 +39,12 @@ namespace DotinBankProject.Infrastructure.Data.Mapping
                 .HasColumnName("PhoneNumber")
                 .HasColumnType("nvarchar(20)")
                 .HasMaxLength(20);
+
             // relationships
 
             #endregion
         }
 
-       
+
     }
 }

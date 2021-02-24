@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotinBankProject.Application", "DotinBankProject.Application\DotinBankProject.Application.csproj", "{ECFAF7F5-CFE4-47DE-BEF6-933BEB91DF7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Application", "DotinBankProject.Application\DotinBankProject.Application.csproj", "{ECFAF7F5-CFE4-47DE-BEF6-933BEB91DF7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotinBankProject.Core", "DotinBankProject.Core\DotinBankProject.Core.csproj", "{479F408C-E621-467E-B2F4-7DF34BADA62F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Core", "DotinBankProject.Core\DotinBankProject.Core.csproj", "{479F408C-E621-467E-B2F4-7DF34BADA62F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotinBankProject.Infrastructure", "DotinBankProject.Infrastructure\DotinBankProject.Infrastructure.csproj", "{1AA54078-CDBE-4734-887A-15EBF9B61BB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Infrastructure", "DotinBankProject.Infrastructure\DotinBankProject.Infrastructure.csproj", "{1AA54078-CDBE-4734-887A-15EBF9B61BB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotinBankProject.Api", "DotinBankProject.Api\DotinBankProject.Api.csproj", "{835147CC-F34E-4217-B013-3DDD75E34FC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Api", "DotinBankProject.Api\DotinBankProject.Api.csproj", "{835147CC-F34E-4217-B013-3DDD75E34FC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{DED08BC7-1A55-4479-A419-A9EF5A7F45B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2C52AB06-3FC1-40BD-986D-C2A32C646B45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6073315E-694F-4707-B6E8-35934F011A31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{458AC620-E8F1-4B22-88FA-85BFDB8CCA9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +44,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECFAF7F5-CFE4-47DE-BEF6-933BEB91DF7D} = {DED08BC7-1A55-4479-A419-A9EF5A7F45B2}
+		{479F408C-E621-467E-B2F4-7DF34BADA62F} = {2C52AB06-3FC1-40BD-986D-C2A32C646B45}
+		{1AA54078-CDBE-4734-887A-15EBF9B61BB2} = {6073315E-694F-4707-B6E8-35934F011A31}
+		{835147CC-F34E-4217-B013-3DDD75E34FC0} = {458AC620-E8F1-4B22-88FA-85BFDB8CCA9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34D6B74F-D498-4176-A21E-682BD9B73BCF}

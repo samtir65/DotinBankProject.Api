@@ -24,7 +24,6 @@ namespace DotinBankProject.Infrastructure.Data.Mapping
                 .HasColumnType("nvarchar(50)")
                 .HasMaxLength(50);
             // relationships
-
             #endregion
         }
 

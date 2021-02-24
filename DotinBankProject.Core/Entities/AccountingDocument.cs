@@ -4,7 +4,7 @@ using DotinBankProject.Core.Entities.Enums;
 
 namespace DotinBankProject.Core.Entities
 {
-    public class AccountingDocument : Entity
+    public class AccountingDocument : TEntity
     {
         public AccountingDocument()
         {

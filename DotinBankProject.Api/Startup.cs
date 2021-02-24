@@ -1,4 +1,8 @@
+using DotinBankProject.Core.Entities;
+using DotinBankProject.Core.Entities.Base;
+using DotinBankProject.Core.Repositories;
 using DotinBankProject.Infrastructure.Data;
+using DotinBankProject.Infrastructure.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +27,7 @@ namespace DotinBankProject.Api
         {
             services.AddDbContextPool<DotinBankContext>(builder => { builder.UseSqlServer(Configuration.GetConnectionString("BankConnectionString")); });
             services.AddControllers();
+            services.AddScoped<IRepository<Customer>, Repository<Customer>>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DotinBankProject.Api", Version = "v1" });

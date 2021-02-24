@@ -3,7 +3,7 @@ using DotinBankProject.Core.Entities.Base;
 
 namespace DotinBankProject.Core.Entities
 {
-    public class Role: Entity
+    public class Role: TEntity
     {
         public Role()
         {

@@ -19,14 +19,17 @@ namespace DotinBankProject.Infrastructure.Data
         public virtual DbSet<AccountType> AccountTypes { get; set; }
         public virtual DbSet<AccountingDocument> AccountingDocuments { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
-        //public virtual DbSet<LegalCustomer> LegalCustomers { get; set; }
-       // public virtual DbSet<RealCustomer> RealCustomers { get; set; }
+       
         public virtual DbSet<CustomersAccount> CustomersAccounts { get; set; }
 
         #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region Generated Configuration
+            modelBuilder.Entity<Customer>(b => b.HasDiscriminator(x => x.CustomerType)
+            .HasValue<LegalCustomer>(Core.Entities.Enums.CustomerType.Legal)
+            .HasValue<RealCustomer>(Core.Entities.Enums.CustomerType.Real));
+
             modelBuilder.ApplyConfiguration(new UserMap());
             modelBuilder.ApplyConfiguration(new AccountTypeMap());
             modelBuilder.ApplyConfiguration(new RoleMap());

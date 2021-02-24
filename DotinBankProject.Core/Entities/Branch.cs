@@ -3,7 +3,7 @@ using DotinBankProject.Core.Entities.Base;
 
 namespace DotinBankProject.Core.Entities
 {
-    public class Branch: Entity
+    public class Branch: TEntity
     {
         public Branch()
         {
