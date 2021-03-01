@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "m4eBONXvg5lbm0lw2mFJEQpUdvAEXZ1CbqvLL6Tg0H2h5yKFq799rsL010U/Q0G9ciDQTylAmKIRcXsWaDk9JA==",
+  "dgSpecHash": "8YHj+TYdujHBksqxkS7rQSdgEG0XT/87HoPR9X7SClNNgeewsoFu9zap3A5KjOoFpVuPFVgSqIdYMmW7HEy+4g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Samira\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

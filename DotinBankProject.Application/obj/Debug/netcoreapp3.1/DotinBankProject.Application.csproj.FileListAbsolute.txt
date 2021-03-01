@@ -16,3 +16,6 @@ C:\Users\Samira\Downloads\DotinBankProject.Api-master\DotinBankProject.Applicati
 C:\Users\Samira\Downloads\DotinBankProject.Api-master\DotinBankProject.Application\obj\Debug\netcoreapp3.1\DotinBankProject.Application.csproj.CoreCompileInputs.cache
 C:\Users\Samira\Downloads\DotinBankProject.Api-master\DotinBankProject.Application\obj\Debug\netcoreapp3.1\DotinBankProject.Application.dll
 C:\Users\Samira\Downloads\DotinBankProject.Api-master\DotinBankProject.Application\obj\Debug\netcoreapp3.1\DotinBankProject.Application.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\netcoreapp3.1\DotinBankProject.Core.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\netcoreapp3.1\DotinBankProject.Core.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\netcoreapp3.1\DotinBankProject.Application.csproj.CopyComplete

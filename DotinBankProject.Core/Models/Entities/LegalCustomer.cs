@@ -4,11 +4,11 @@ namespace DotinBankProject.Core.Entities
 {
     public  class LegalCustomer:Customer
     {
-        public LegalCustomer(string companyNumber,string companyName)
+        public LegalCustomer(/*string companyNumber,string companyName*/)
         {
            
-            companyNumber = CompanyNumber;
-            companyName = CompanyName;
+            //companyNumber = CompanyNumber;
+            //companyName = CompanyName;
         }
         #region Properties
         public string CompanyNumber { get; set; }

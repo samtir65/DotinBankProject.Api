@@ -21,10 +21,19 @@ namespace DotinBankProject.Infrastructure.Data.Services
 
         }
 
+        public object Add(object entity)
+        {
+           return _context.Set<object>().Add(entity);
+        }
 
         public void AddRange(IEnumerable<TEntity> entities)
         {
             _context.Set<TEntity>().AddRange(entities);
+        }
+
+        public void AddSaveChanges(TEntity entity)
+        {
+            throw new NotImplementedException();
         }
 
         public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)

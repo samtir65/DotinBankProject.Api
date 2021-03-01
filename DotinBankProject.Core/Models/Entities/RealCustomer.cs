@@ -4,12 +4,12 @@ namespace DotinBankProject.Core.Entities
 {
     public class RealCustomer:Customer
     {
-        public RealCustomer(string firstName,string lastName,string fatherName,string nationalCode)
+        public RealCustomer(/*string firstName,string lastName,string fatherName,string nationalCode*/)
         {
-            firstName = FirstName;
-            lastName = LastName;
-            firstName = FirstName;
-            nationalCode = NationalCode;
+            //firstName = FirstName;
+            //lastName = LastName;
+            //firstName = FirstName;
+            //nationalCode = NationalCode;
              
 
         }

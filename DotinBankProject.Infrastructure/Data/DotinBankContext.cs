@@ -41,7 +41,6 @@ namespace DotinBankProject.Infrastructure.Data
             modelBuilder.ApplyConfiguration(new BranchMap());
             modelBuilder.ApplyConfiguration(new CustomersAccountMap());
             modelBuilder.ApplyConfiguration(new CustomerMap());
-           
             #endregion
         }
     }

@@ -132,3 +132,5 @@ C:\Users\Samira\Downloads\DotinBankProject.Api-master\DotinBankProject.Api\bin\D
 C:\Users\Samira\Downloads\DotinBankProject.Api-master\DotinBankProject.Api\bin\Debug\net5.0\DotinBankProject.Application.pdb
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\DotinBankProject.Application.dll
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\DotinBankProject.Application.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -16,6 +16,7 @@ namespace DotinBankProject.Core.Repositories
         void Remove(TEntity entity);
         void RemoveRange(IEnumerable<TEntity> entities);
         void Save();
-
+        void AddSaveChanges(TEntity entity);
+        object Add(object entity);
     }
 }

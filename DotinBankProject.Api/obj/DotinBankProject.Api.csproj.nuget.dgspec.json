@@ -116,7 +116,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj": {
+                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -128,6 +132,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
