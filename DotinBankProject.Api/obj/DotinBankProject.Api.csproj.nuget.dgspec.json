@@ -34,11 +34,11 @@
               "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj": {
                 "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj"
               },
-              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj": {
-                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj"
+              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj"
               },
-              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj"
+              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj": {
+                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj"
               }
             }
           }
@@ -117,8 +117,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj": {
-                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj"
+              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj"
               }
             }
           }
@@ -157,12 +157,12 @@
         }
       }
     },
-    "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj": {
+    "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj",
-        "projectName": "DotinBankProject.Core",
-        "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj",
+        "projectName": "DotinBankProject.Domain",
+        "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj",
         "packagesPath": "C:\\Users\\Samira\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -214,12 +214,12 @@
         }
       }
     },
-    "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj": {
+    "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj",
-        "projectName": "DotinBankProject.Infrastructure",
-        "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj",
+        "projectName": "DotinBankProject.Data",
+        "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj",
         "packagesPath": "C:\\Users\\Samira\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -241,8 +241,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj": {
-                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj"
+              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj": {
+                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj"
               }
             }
           }

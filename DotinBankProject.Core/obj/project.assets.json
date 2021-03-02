@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj",
-      "projectName": "DotinBankProject.Core",
-      "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj",
+      "projectName": "DotinBankProject.Domain",
+      "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj",
       "packagesPath": "C:\\Users\\Samira\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\obj\\",
       "projectStyle": "PackageReference",
@@ -36,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -47,11 +48,23 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

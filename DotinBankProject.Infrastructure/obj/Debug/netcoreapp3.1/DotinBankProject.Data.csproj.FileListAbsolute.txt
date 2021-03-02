@@ -1,0 +1,15 @@
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Data.deps.json
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Data.runtimeconfig.json
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Data.runtimeconfig.dev.json
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Data.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Data.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Domain.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Domain.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.csprojAssemblyReference.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.AssemblyInfoInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.AssemblyInfo.cs
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.csproj.CoreCompileInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.csproj.CopyComplete
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.genruntimeconfig.cache

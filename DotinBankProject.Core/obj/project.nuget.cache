@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MHP3vh8KyqDPmvbP/T5PHJu5KlN1ieenNQ/fD4uO19hfgBOsCuKWTGXpSyqSRasD+5f6fcGQEinpFqAOtqraGA==",
+  "dgSpecHash": "HsHgPaMRuyycGr4UPkd2MYuG2FXkzWy4HGp9lM7eGb7H4ik6PNc8TAk7akcCY6Q5xc2xqNVbm25YO0pJfUkttg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj",
+  "projectFilePath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

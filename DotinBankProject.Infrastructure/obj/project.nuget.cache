@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4IX/nVyjZbg2x+cb36Ng40gxmIerw5FWbTmOBEMKGZeDj1lWjCDNjQ990Ete0e5vbGvnzenwSLEDZroOUML4kA==",
+  "dgSpecHash": "JfGcr/dCC/PszcA8KFRJEfZQoHwyjL3/scJ5k2PTAknSTjlKss2F75/Y1ErcB0wuPBLkItRqztpdbtxgDMt1VQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samira\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Samira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

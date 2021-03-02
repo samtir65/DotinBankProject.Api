@@ -31,10 +31,10 @@ namespace DotinBankProject.Api.Controllers
             _repository = repository;
             _mapper = new Mapper(new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<CustomerModel,RealCustomer>().ReverseMap();
+                cfg.CreateMap<CustomerModel, RealCustomer>().ReverseMap();
                 cfg.CreateMap<LegalCustomer, CustomerModel>().ReverseMap();
                 cfg.CreateMap<Customer, CustomerModel>().ReverseMap();
-                cfg.CreateMap<CustomerModel, CustomerModelDto>().ReverseMap();
+               //cfg.CreateMap<CustomerModel, CustomerModelDto>().ReverseMap();
             }));
 
         }
@@ -45,7 +45,8 @@ namespace DotinBankProject.Api.Controllers
         {
              
             IEnumerable<CustomerModel> customers = _repository.GetAll();
-            return Ok(_mapper.Map<IEnumerable<CustomerModelDto>>(customers));
+            return Ok(_mapper.Map<IEnumerable<CustomerModel>>(customers));
+            //return Ok(customers);
             
         }
         // GET api/<CustomerController>/5

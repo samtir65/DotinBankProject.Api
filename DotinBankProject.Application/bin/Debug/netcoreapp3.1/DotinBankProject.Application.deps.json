@@ -9,7 +9,7 @@
       "DotinBankProject.Application/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "DotinBankProject.Core": "1.0.0"
+          "DotinBankProject.Domain": "1.0.0"
         },
         "runtime": {
           "DotinBankProject.Application.dll": {}
@@ -70,9 +70,9 @@
         }
       },
       "System.Reflection.Emit/4.7.0": {},
-      "DotinBankProject.Core/1.0.0": {
+      "DotinBankProject.Domain/1.0.0": {
         "runtime": {
-          "DotinBankProject.Core.dll": {}
+          "DotinBankProject.Domain.dll": {}
         }
       }
     }
@@ -132,7 +132,7 @@
       "path": "system.reflection.emit/4.7.0",
       "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
     },
-    "DotinBankProject.Core/1.0.0": {
+    "DotinBankProject.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

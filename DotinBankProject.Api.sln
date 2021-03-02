@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Application", "DotinBankProject.Application\DotinBankProject.Application.csproj", "{ECFAF7F5-CFE4-47DE-BEF6-933BEB91DF7D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Core", "DotinBankProject.Core\DotinBankProject.Core.csproj", "{479F408C-E621-467E-B2F4-7DF34BADA62F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Domain", "DotinBankProject.Core\DotinBankProject.Domain.csproj", "{479F408C-E621-467E-B2F4-7DF34BADA62F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Infrastructure", "DotinBankProject.Infrastructure\DotinBankProject.Infrastructure.csproj", "{1AA54078-CDBE-4734-887A-15EBF9B61BB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Data", "DotinBankProject.Infrastructure\DotinBankProject.Data.csproj", "{1AA54078-CDBE-4734-887A-15EBF9B61BB2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotinBankProject.Api", "DotinBankProject.Api\DotinBankProject.Api.csproj", "{835147CC-F34E-4217-B013-3DDD75E34FC0}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6073315E-694F-4707-B6E8-35934F011A31}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{458AC620-E8F1-4B22-88FA-85BFDB8CCA9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{62210E5C-8589-42A6-8584-2503C33BAF84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

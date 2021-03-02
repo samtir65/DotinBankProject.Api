@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotinBankProject.Core\DotinBankProject.Core.csproj" />
+    <ProjectReference Include="..\DotinBankProject.Core\DotinBankProject.Domain.csproj" />
   </ItemGroup>
 
 </Project>

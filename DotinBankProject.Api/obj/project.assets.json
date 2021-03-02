@@ -1607,7 +1607,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "DotinBankProject.Core": "1.0.0"
+          "DotinBankProject.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DotinBankProject.Application.dll": {}
@@ -1616,29 +1616,29 @@
           "bin/placeholder/DotinBankProject.Application.dll": {}
         }
       },
-      "DotinBankProject.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/DotinBankProject.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DotinBankProject.Core.dll": {}
-        }
-      },
-      "DotinBankProject.Infrastructure/1.0.0": {
+      "DotinBankProject.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "DotinBankProject.Core": "1.0.0",
+          "DotinBankProject.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3"
         },
         "compile": {
-          "bin/placeholder/DotinBankProject.Infrastructure.dll": {}
+          "bin/placeholder/DotinBankProject.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DotinBankProject.Infrastructure.dll": {}
+          "bin/placeholder/DotinBankProject.Data.dll": {}
+        }
+      },
+      "DotinBankProject.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DotinBankProject.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotinBankProject.Domain.dll": {}
         }
       }
     }
@@ -5997,22 +5997,22 @@
       "path": "../DotinBankProject.Application/DotinBankProject.Application.csproj",
       "msbuildProject": "../DotinBankProject.Application/DotinBankProject.Application.csproj"
     },
-    "DotinBankProject.Core/1.0.0": {
+    "DotinBankProject.Data/1.0.0": {
       "type": "project",
-      "path": "../DotinBankProject.Core/DotinBankProject.Core.csproj",
-      "msbuildProject": "../DotinBankProject.Core/DotinBankProject.Core.csproj"
+      "path": "../DotinBankProject.Infrastructure/DotinBankProject.Data.csproj",
+      "msbuildProject": "../DotinBankProject.Infrastructure/DotinBankProject.Data.csproj"
     },
-    "DotinBankProject.Infrastructure/1.0.0": {
+    "DotinBankProject.Domain/1.0.0": {
       "type": "project",
-      "path": "../DotinBankProject.Infrastructure/DotinBankProject.Infrastructure.csproj",
-      "msbuildProject": "../DotinBankProject.Infrastructure/DotinBankProject.Infrastructure.csproj"
+      "path": "../DotinBankProject.Core/DotinBankProject.Domain.csproj",
+      "msbuildProject": "../DotinBankProject.Core/DotinBankProject.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DotinBankProject.Application >= 1.0.0",
-      "DotinBankProject.Core >= 1.0.0",
-      "DotinBankProject.Infrastructure >= 1.0.0",
+      "DotinBankProject.Data >= 1.0.0",
+      "DotinBankProject.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.3",
       "Swashbuckle.AspNetCore >= 5.6.3"
@@ -6052,11 +6052,11 @@
             "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj": {
               "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj"
             },
-            "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj": {
-              "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Core.csproj"
+            "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj": {
+              "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj"
             },
-            "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Infrastructure.csproj"
+            "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj": {
+              "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Infrastructure\\DotinBankProject.Data.csproj"
             }
           }
         }

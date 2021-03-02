@@ -26,8 +26,8 @@
       "DotinBankProject.Api/1.0.0": {
         "dependencies": {
           "DotinBankProject.Application": "1.0.0",
-          "DotinBankProject.Core": "1.0.0",
-          "DotinBankProject.Infrastructure": "1.0.0",
+          "DotinBankProject.Data": "1.0.0",
+          "DotinBankProject.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.3",
           "Microsoft.EntityFrameworkCore.Design": "5.0.3",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -1388,7 +1388,7 @@
       "DotinBankProject.Application/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "DotinBankProject.Core": "1.0.0"
+          "DotinBankProject.Domain": "1.0.0"
         },
         "runtime": {
           "DotinBankProject.Application.dll": {}
@@ -1397,25 +1397,25 @@
           "DotinBankProject.Application.dll": {}
         }
       },
-      "DotinBankProject.Core/1.0.0": {
-        "runtime": {
-          "DotinBankProject.Core.dll": {}
-        },
-        "compile": {
-          "DotinBankProject.Core.dll": {}
-        }
-      },
-      "DotinBankProject.Infrastructure/1.0.0": {
+      "DotinBankProject.Data/1.0.0": {
         "dependencies": {
-          "DotinBankProject.Core": "1.0.0",
+          "DotinBankProject.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.3"
         },
         "runtime": {
-          "DotinBankProject.Infrastructure.dll": {}
+          "DotinBankProject.Data.dll": {}
         },
         "compile": {
-          "DotinBankProject.Infrastructure.dll": {}
+          "DotinBankProject.Data.dll": {}
+        }
+      },
+      "DotinBankProject.Domain/1.0.0": {
+        "runtime": {
+          "DotinBankProject.Domain.dll": {}
+        },
+        "compile": {
+          "DotinBankProject.Domain.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3845,12 +3845,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "DotinBankProject.Core/1.0.0": {
+    "DotinBankProject.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "DotinBankProject.Infrastructure/1.0.0": {
+    "DotinBankProject.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
