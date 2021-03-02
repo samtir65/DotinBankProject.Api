@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
+using DotinBankProject.Api.ResultModel;
 using DotinBankProject.Application.Models;
 using DotinBankProject.Core.Entities;
 using DotinBankProject.Core.Entities.Enums;
 using DotinBankProject.Core.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
+using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,49 +20,54 @@ namespace DotinBankProject.Api.Controllers
     {
         private readonly IRepository<LegalCustomer> _repositoryLegalCustomer;
         private readonly IRepository<RealCustomer> _repositoryRealCustomer;
-        private readonly IRepository<CustomerModel> _repository;
         private readonly IRepository<Customer> _repositoryCustomer;
         private readonly IMapper _mapper;
         public CustomerController(IRepository<LegalCustomer> repositoryLegalCustomer
             , IRepository<RealCustomer> repositoryRealCustomer
             , IRepository<Customer> repositoryCustomer
-             ,IRepository<CustomerModel> repository)
+             )
         {
             _repositoryLegalCustomer = repositoryLegalCustomer;
             _repositoryRealCustomer = repositoryRealCustomer;
             _repositoryCustomer = repositoryCustomer;
-            _repository = repository;
             _mapper = new Mapper(new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<CustomerModel, RealCustomer>().ReverseMap();
-                cfg.CreateMap<LegalCustomer, CustomerModel>().ReverseMap();
+                cfg.CreateMap<CustomerModel, LegalCustomer>().ReverseMap();
                 cfg.CreateMap<Customer, CustomerModel>().ReverseMap();
-               //cfg.CreateMap<CustomerModel, CustomerModelDto>().ReverseMap();
+                //cfg.CreateMap<CustomerModel, CustomerModelDto>().ReverseMap();
             }));
 
         }
         // GET: api/<CustomerController>
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<CustomerModel>), (int)HttpStatusCode.OK)]
-        public IActionResult Get()
+        public ActionResult<IEnumerable<CustomerModel>> Get()
         {
-             
-            IEnumerable<CustomerModel> customers = _repository.GetAll();
-            return Ok(_mapper.Map<IEnumerable<CustomerModel>>(customers));
+
+            List<CustomerModel> customers = new List<CustomerModel>(); 
+            var legalCustomer = _repositoryLegalCustomer.GetAll();
+            var realCustomer = _repositoryRealCustomer.GetAll();
+
+            customers.Add(_mapper.Map<CustomerModel>(legalCustomer));
+            customers.Add(_mapper.Map<CustomerModel>(realCustomer)); 
+
+            return Ok(customers);
             //return Ok(customers);
-            
+
         }
         // GET api/<CustomerController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public string Get(int id)
         {
+            var result = new ApiResultModel(); 
             Customer customer = _repositoryCustomer.Get(id);
-            if (customer == null)
-            {
-                return NotFound("The Employee record couldn't be found.");
+            //if (customer == null)
+            //{
+            //    return NotFound("The Employee record couldn't be found.");
 
-            }
-            return Ok(customer);
+            //}
+            result.Data = customer;
+            return JsonSerializer.Serialize(result);
         }
 
         //POST api/<CustomerController>
@@ -79,15 +87,15 @@ namespace DotinBankProject.Api.Controllers
             if (model.CustomerType == CustomerType.Real)
             {
                 var entity = _mapper.Map<RealCustomer>(model);
-                 _repositoryRealCustomer.Add(entity);
+                _repositoryRealCustomer.Add(entity);
             }
 
             else if (model.CustomerType == CustomerType.Legal)
             {
                 var entity = _mapper.Map<LegalCustomer>(model);
-                 _repositoryLegalCustomer.Add(entity);
+                _repositoryLegalCustomer.Add(entity);
             }
-                _repositoryCustomer.Save();
+            _repositoryCustomer.Save();
             return Ok(model);
         }
         // PUT api/<CustomerController>/5

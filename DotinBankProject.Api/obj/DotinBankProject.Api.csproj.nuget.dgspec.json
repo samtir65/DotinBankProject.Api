@@ -53,6 +53,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.3, )"
@@ -241,6 +245,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj": {
+                "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj"
+              },
               "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj": {
                 "projectPath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj"
               }

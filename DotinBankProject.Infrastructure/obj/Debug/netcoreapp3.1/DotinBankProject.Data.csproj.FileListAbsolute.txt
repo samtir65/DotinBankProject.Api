@@ -13,3 +13,5 @@ C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankPr
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.dll
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.pdb
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\obj\Debug\netcoreapp3.1\DotinBankProject.Data.genruntimeconfig.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Application.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Infrastructure\bin\Debug\netcoreapp3.1\DotinBankProject.Application.pdb

@@ -31,6 +31,12 @@ namespace DotinBankProject.Api
             services.AddScoped<IRepository<RealCustomer>, Repository<RealCustomer>>();
             services.AddScoped<IRepository<LegalCustomer>, Repository<LegalCustomer>>();
             services.AddScoped<IRepository<Customer>, Repository<Customer>>();
+            services.AddScoped<IRepository<User>, Repository<User>>();
+            services.AddScoped<IRepository<Role>, Repository<Role>>();
+            services.AddScoped<IRepository<Account>, Repository<Account>>();
+            services.AddScoped<IRepository<AccountingDocument>, Repository<AccountingDocument>>();
+            services.AddScoped<IRepository<AccountType>, Repository<AccountType>>();
+            services.AddScoped<IRepository<Branch>, Repository<Branch>>();
             //services.AddScoped<IRepository<CustomerModel>, Repository<CustomerModel>>();
 
             services.AddSwaggerGen(c =>
