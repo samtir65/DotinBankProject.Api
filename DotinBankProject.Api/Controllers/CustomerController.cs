@@ -6,8 +6,6 @@ using DotinBankProject.Core.Entities.Enums;
 using DotinBankProject.Core.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -25,18 +23,20 @@ namespace DotinBankProject.Api.Controllers
         public CustomerController(IRepository<LegalCustomer> repositoryLegalCustomer
             , IRepository<RealCustomer> repositoryRealCustomer
             , IRepository<Customer> repositoryCustomer
+            ,IMapper mapper
              )
         {
             _repositoryLegalCustomer = repositoryLegalCustomer;
             _repositoryRealCustomer = repositoryRealCustomer;
             _repositoryCustomer = repositoryCustomer;
-            _mapper = new Mapper(new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<CustomerModel, RealCustomer>().ReverseMap();
-                cfg.CreateMap<CustomerModel, LegalCustomer>().ReverseMap();
-                cfg.CreateMap<Customer, CustomerModel>().ReverseMap();
-                //cfg.CreateMap<CustomerModel, CustomerModelDto>().ReverseMap();
-            }));
+            _mapper = mapper;
+            //_mapper = new Mapper(new MapperConfiguration(cfg =>
+            //{
+            //    cfg.CreateMap<CustomerModel, RealCustomer>().ReverseMap();
+            //    cfg.CreateMap<CustomerModel, LegalCustomer>().ReverseMap();
+            //    cfg.CreateMap<Customer, CustomerModel>().ReverseMap();
+            //    //cfg.CreateMap<CustomerModel, CustomerModelDto>().ReverseMap();
+            //}));
 
         }
         // GET: api/<CustomerController>
@@ -44,7 +44,7 @@ namespace DotinBankProject.Api.Controllers
         public ActionResult<IEnumerable<CustomerModel>> Get()
         {
 
-            List<CustomerModel> customers = new List<CustomerModel>(); 
+            List<CustomerModel> customers = new List<CustomerModel>();
             var legalCustomer = _repositoryLegalCustomer.GetAll();
             var realCustomer = _repositoryRealCustomer.GetAll();
 

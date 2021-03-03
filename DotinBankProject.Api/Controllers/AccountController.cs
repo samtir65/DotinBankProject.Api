@@ -13,8 +13,8 @@ namespace DotinBankProject.Api.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly IRepository<Account> _repositoryAccount;
-        public AccountController(IRepository<Account> repositoryAccount)
+        private readonly IRepository<AccountDto> _repositoryAccount;
+        public AccountController(IRepository<AccountDto> repositoryAccount)
         {
             _repositoryAccount = repositoryAccount;
         }
@@ -22,7 +22,7 @@ namespace DotinBankProject.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            IEnumerable<Account> role = _repositoryAccount.GetAll();
+            IEnumerable<AccountDto> role = _repositoryAccount.GetAll();
             return Ok(role);
         }
 
@@ -30,7 +30,7 @@ namespace DotinBankProject.Api.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            Account account = _repositoryAccount.Get(id);
+            AccountDto account = _repositoryAccount.Get(id);
             if (account == null)
             {
                 return NotFound("The account record couldn't be found.");
@@ -43,7 +43,7 @@ namespace DotinBankProject.Api.Controllers
 
         // POST api/<AccountController>
         [HttpPost]
-        public IActionResult Post([FromBody] Account account)
+        public IActionResult Post([FromBody] AccountDto account)
         {
             if (account == null)
             {
@@ -55,13 +55,13 @@ namespace DotinBankProject.Api.Controllers
 
         // PUT api/<AccountController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Account account)
+        public IActionResult Put(int id, [FromBody] AccountDto account)
         {
             if (account == null)
             {
                 return BadRequest("account is null");
             }
-            Account accounttoUpdate = _repositoryAccount.Get(id);
+            AccountDto accounttoUpdate = _repositoryAccount.Get(id);
             if (accounttoUpdate == null)
             {
                 return NotFound("accounttoUpdate could not be found");
@@ -76,7 +76,7 @@ namespace DotinBankProject.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            Account account = _repositoryAccount.Get(id);
+            AccountDto account = _repositoryAccount.Get(id);
             if (account == null)
             {
                 return NotFound();

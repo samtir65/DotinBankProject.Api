@@ -6,7 +6,7 @@ namespace DotinBankProject.Infrastructure.Data.Mapping
     public class AccountMap
         : IEntityTypeConfiguration<Account>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<DotinBankProject.Core.Entities.Account> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Account> builder)
         {
             #region Generated Configure
             // table
