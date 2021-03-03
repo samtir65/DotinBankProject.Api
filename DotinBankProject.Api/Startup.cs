@@ -1,3 +1,5 @@
+using AutoMapper;
+using DotinBankProject.Application.Mappings;
 using DotinBankProject.Application.Models;
 using DotinBankProject.Core.Entities;
 using DotinBankProject.Core.Entities.Base;
@@ -27,14 +29,19 @@ namespace DotinBankProject.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<DotinBankContext>(builder => { builder.UseSqlServer(Configuration.GetConnectionString("BankConnectionString")); });
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(MappingProfile));
+            //var mapperConfig = new MapperConfiguration(mc =>
+            //{
+            //    mc.AddProfile(new MappingProfile());
+            //});
+
             services.AddControllers();
             services.AddScoped<IRepository<RealCustomer>, Repository<RealCustomer>>();
             services.AddScoped<IRepository<LegalCustomer>, Repository<LegalCustomer>>();
             services.AddScoped<IRepository<Customer>, Repository<Customer>>();
             services.AddScoped<IRepository<User>, Repository<User>>();
             services.AddScoped<IRepository<Role>, Repository<Role>>();
-            services.AddScoped<IRepository<AccountDto>, Repository<AccountDto>>();
+            services.AddScoped<IRepository<Account>, Repository<Account>>();
             services.AddScoped<IRepository<AccountingDocument>, Repository<AccountingDocument>>();
             services.AddScoped<IRepository<AccountType>, Repository<AccountType>>();
             services.AddScoped<IRepository<Branch>, Repository<Branch>>();

@@ -1,4 +1,5 @@
-﻿using DotinBankProject.Core.Entities;
+﻿using AutoMapper;
+using DotinBankProject.Core.Entities;
 using DotinBankProject.Core.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -12,16 +13,20 @@ namespace DotinBankProject.Api.Controllers
     public class UserController : ControllerBase
     {
         public readonly IRepository<User> _repositoryUser;
-        public UserController(IRepository<User>  repositoryUser)
+        private readonly IMapper _mapper;
+        public UserController(IRepository<User>  repositoryUser, IMapper mapper)
         {
             _repositoryUser = repositoryUser;
+            _mapper = mapper;
+           
         }
         // GET: api/<UserController>
         [HttpGet]
         public IActionResult Get()
         {
             IEnumerable<User> user = _repositoryUser.GetAll();
-            return Ok(user);
+            var userDto = _mapper.Map<UserDto>(user);
+            return Ok(userDto);
 
         }
 

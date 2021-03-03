@@ -1,0 +1,15 @@
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\net5.0\DotinBankProject.Application.deps.json
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\net5.0\DotinBankProject.Application.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\net5.0\ref\DotinBankProject.Application.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\net5.0\DotinBankProject.Application.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\net5.0\DotinBankProject.Domain.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\bin\Debug\net5.0\DotinBankProject.Domain.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.csprojAssemblyReference.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.AssemblyInfoInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.AssemblyInfo.cs
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.csproj.CopyComplete
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\ref\DotinBankProject.Application.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Application\obj\Debug\net5.0\DotinBankProject.Application.pdb

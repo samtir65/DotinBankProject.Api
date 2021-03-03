@@ -1,0 +1,12 @@
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\bin\Debug\net5.0\DotinBankProject.Domain.deps.json
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\bin\Debug\net5.0\DotinBankProject.Domain.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\bin\Debug\net5.0\ref\DotinBankProject.Domain.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\bin\Debug\net5.0\DotinBankProject.Domain.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\DotinBankProject.Domain.csprojAssemblyReference.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\DotinBankProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\DotinBankProject.Domain.AssemblyInfoInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\DotinBankProject.Domain.AssemblyInfo.cs
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\DotinBankProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\DotinBankProject.Domain.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\ref\DotinBankProject.Domain.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Core\obj\Debug\net5.0\DotinBankProject.Domain.pdb
