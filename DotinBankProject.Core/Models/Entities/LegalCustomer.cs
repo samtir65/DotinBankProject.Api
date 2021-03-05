@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DotinBankProject.Core.Entities
+namespace DotinBankProject.Domain.Models.Entities
 {
     public  class LegalCustomer:Customer
     {

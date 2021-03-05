@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using DotinBankProject.Core.Entities.Base;
+using DotinBankProject.Domain.Models.Entities.Base;
 
-namespace DotinBankProject.Core.Entities
+namespace DotinBankProject.Domain.Models.Entities
 {
     public class Role: TEntity
     {

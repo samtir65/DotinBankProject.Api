@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using DotinBankProject.Core.Entities.Base;
-
-namespace DotinBankProject.Core.Entities
+﻿namespace DotinBankProject.Application.Models.Dtos
 {
     public class AccountTypeDto
     {

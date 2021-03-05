@@ -1,8 +1,7 @@
 using System;
-using DotinBankProject.Core.Entities.Enums;
+using DotinBankProject.Domain.Models.Entities.Enums;
 
-
-namespace DotinBankProject.Application.Models
+namespace DotinBankProject.Application.Models.Dtos
 {
     public class AccountingDocumentDto
     {

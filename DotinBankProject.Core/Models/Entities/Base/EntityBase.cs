@@ -1,4 +1,4 @@
-﻿namespace DotinBankProject.Core.Entities.Base
+﻿namespace DotinBankProject.Domain.Models.Entities.Base
 {
     public abstract class EntityBase<TId> : IEntityBase<TId>
     {

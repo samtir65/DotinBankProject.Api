@@ -1,10 +1,10 @@
-﻿using DotinBankProject.Core.Entities;
-using DotinBankProject.Core.Repositories;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DotinBankProject.Domain.Models.Entities;
+using DotinBankProject.Domain.Repositories.Base;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

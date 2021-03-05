@@ -1,8 +1,9 @@
+using DotinBankProject.Data.Data.Mapping;
+using DotinBankProject.Domain.Models.Entities;
+using DotinBankProject.Domain.Models.Entities.Enums;
 using Microsoft.EntityFrameworkCore;
-using DotinBankProject.Core.Entities;
-using DotinBankProject.Infrastructure.Data.Mapping;
 
-namespace DotinBankProject.Infrastructure.Data
+namespace DotinBankProject.Data.Data
 {
     public class DotinBankContext : DbContext
     {
@@ -27,8 +28,8 @@ namespace DotinBankProject.Infrastructure.Data
         {
             #region Generated Configuration
             modelBuilder.Entity<Customer>(b => b.HasDiscriminator(x => x.CustomerType)
-            .HasValue<LegalCustomer>(Core.Entities.Enums.CustomerType.Legal)
-            .HasValue<RealCustomer>(Core.Entities.Enums.CustomerType.Real));
+            .HasValue<LegalCustomer>(CustomerType.Legal)
+            .HasValue<RealCustomer>(CustomerType.Real));
 
             modelBuilder.ApplyConfiguration(new UserMap());
             modelBuilder.ApplyConfiguration(new AccountTypeMap());

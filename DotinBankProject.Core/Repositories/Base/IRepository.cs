@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using  System.Linq.Expressions;
+using System.Linq.Expressions;
 
-
-namespace DotinBankProject.Core.Repositories
+namespace DotinBankProject.Domain.Repositories.Base
 {
     public interface IRepository<TEntity> where  TEntity:class
     {

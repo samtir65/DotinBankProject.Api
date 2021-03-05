@@ -1,4 +1,4 @@
-﻿namespace DotinBankProject.Core.Entities.Enums
+﻿namespace DotinBankProject.Domain.Models.Entities.Enums
 {
     public enum AccountingDocumentType
     {

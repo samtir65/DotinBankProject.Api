@@ -1,4 +1,4 @@
-namespace DotinBankProject.Core.Entities
+namespace DotinBankProject.Application.Models.Dtos
 {
     public class RoleDto
     {

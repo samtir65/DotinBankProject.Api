@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using DotinBankProject.Core.Repositories;
+using DotinBankProject.Domain.Repositories.Base;
 
-namespace DotinBankProject.Infrastructure.Data.Services
+namespace DotinBankProject.Data.Data.Services.Base
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

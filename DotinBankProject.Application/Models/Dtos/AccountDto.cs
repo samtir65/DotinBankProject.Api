@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DotinBankProject.Application.Models
+namespace DotinBankProject.Application.Models.Dtos
 {
     public class AccountDto
     {

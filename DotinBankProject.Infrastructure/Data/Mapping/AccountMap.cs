@@ -1,7 +1,7 @@
-using DotinBankProject.Core.Entities;
+using DotinBankProject.Domain.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotinBankProject.Infrastructure.Data.Mapping
+namespace DotinBankProject.Data.Data.Mapping
 {
     public class AccountMap
         : IEntityTypeConfiguration<Account>

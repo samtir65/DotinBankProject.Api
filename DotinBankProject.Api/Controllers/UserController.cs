@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using DotinBankProject.Core.Entities;
-using DotinBankProject.Core.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using DotinBankProject.Application.Models.Dtos;
+using DotinBankProject.Domain.Models.Entities;
+using DotinBankProject.Domain.Repositories.Base;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,7 +15,7 @@ namespace DotinBankProject.Api.Controllers
     {
         public readonly IRepository<User> _repositoryUser;
         private readonly IMapper _mapper;
-        public UserController(IRepository<User>  repositoryUser, IMapper mapper)
+        public UserController(IRepository<User> repositoryUser, IMapper mapper)
         {
             _repositoryUser = repositoryUser;
             _mapper = mapper;
@@ -27,7 +28,6 @@ namespace DotinBankProject.Api.Controllers
             IEnumerable<User> user = _repositoryUser.GetAll();
             var userDto = _mapper.Map<UserDto>(user);
             return Ok(userDto);
-
         }
 
         // GET api/<UserController>/5

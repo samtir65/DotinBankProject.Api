@@ -1,12 +1,12 @@
-using DotinBankProject.Core.Entities;
+using DotinBankProject.Domain.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotinBankProject.Infrastructure.Data.Mapping
+namespace DotinBankProject.Data.Data.Mapping
 {
     public class CustomerMap
         : IEntityTypeConfiguration<Customer>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<DotinBankProject.Core.Entities.Customer> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Customer> builder)
         {
             #region Generated Configure
             // table

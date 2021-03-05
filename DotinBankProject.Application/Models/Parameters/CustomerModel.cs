@@ -1,8 +1,6 @@
-﻿using DotinBankProject.Core.Entities.Base;
-using DotinBankProject.Core.Entities.Enums;
-using System;
+﻿using DotinBankProject.Domain.Models.Entities.Enums;
 
-namespace DotinBankProject.Application.Models
+namespace DotinBankProject.Application.Models.Parameters
 {
     public class CustomerModel
     {

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using DotinBankProject.Application.Models;
-using DotinBankProject.Core.Entities;
+using DotinBankProject.Application.Models.Dtos;
+using DotinBankProject.Application.Models.Parameters;
+using DotinBankProject.Domain.Models.Entities;
 
 namespace DotinBankProject.Application.Mappings
 {
@@ -10,11 +11,9 @@ namespace DotinBankProject.Application.Mappings
         #region Constructor
         public MappingProfile()
         {
-
             CustomerController();
             AccountController();
             UserController();
-          
         }
         #endregion
 
@@ -22,7 +21,6 @@ namespace DotinBankProject.Application.Mappings
 
         private void CustomerController()
         {
-
             #region Parameters
             CreateMap<CustomerModel, Customer>().ReverseMap();
 
@@ -54,7 +52,7 @@ namespace DotinBankProject.Application.Mappings
             #endregion
 
             #region Dtos
-            CreateMap<User, UserDto>();
+            CreateMap<User, UserDto>().ReverseMap();
             #endregion
         }
         #endregion

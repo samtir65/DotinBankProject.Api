@@ -1,9 +1,9 @@
-﻿using DotinBankProject.Core.Entities.Enums;
+﻿using System;
 using System.Collections.Generic;
-using DotinBankProject.Core.Entities.Base;
-using System;
+using DotinBankProject.Domain.Models.Entities.Base;
+using DotinBankProject.Domain.Models.Entities.Enums;
 
-namespace DotinBankProject.Core.Entities
+namespace DotinBankProject.Domain.Models.Entities
 {
     public abstract class Customer:TEntity
     {
