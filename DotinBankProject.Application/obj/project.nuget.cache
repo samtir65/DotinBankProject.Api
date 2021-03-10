@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QMrZ3ZMdyeUHcsw9Lahs3VYseGSwP1VGzX+NDa3s9S6aP23hrc/dT6Gct53O6eMHrsEM+V/WgGTrBJcBIRTpOA==",
+  "dgSpecHash": "UD7B+DSuWtWVWPoDEIwsOLzGhVcFNHM4x9dkh93tfYjHcJl4kmqpASgQVGXSJwgZEEX+qvj0YXTR7wgHmipg0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Application\\DotinBankProject.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samira\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Samira\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Samira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Samira\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
     "C:\\Users\\Samira\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",

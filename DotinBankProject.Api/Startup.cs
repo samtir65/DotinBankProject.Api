@@ -1,10 +1,10 @@
-using AutoMapper;
-using DotinBankProject.Application.Mappings;
-using DotinBankProject.Application.Models;
+using System.Reflection;
+using DotinBankProject.Application.MappingProfiles;
 using DotinBankProject.Data.Data;
 using DotinBankProject.Data.Data.Services.Base;
 using DotinBankProject.Domain.Models.Entities;
 using DotinBankProject.Domain.Repositories.Base;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -28,10 +28,8 @@ namespace DotinBankProject.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<DotinBankContext>(builder => { builder.UseSqlServer(Configuration.GetConnectionString("BankConnectionString")); });
-           // services.AddAutoMapper({ profile assembly marker types});
-            services.AddAutoMapper(typeof(Startup));
-           
-
+            services.AddAutoMapper(typeof(MappingProfile));
+            services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddControllers();
             services.AddScoped<IRepository<RealCustomer>, Repository<RealCustomer>>();
             services.AddScoped<IRepository<LegalCustomer>, Repository<LegalCustomer>>();
@@ -42,7 +40,7 @@ namespace DotinBankProject.Api
             services.AddScoped<IRepository<AccountingDocument>, Repository<AccountingDocument>>();
             services.AddScoped<IRepository<AccountType>, Repository<AccountType>>();
             services.AddScoped<IRepository<Branch>, Repository<Branch>>();
-            //services.AddScoped<IRepository<CustomerModel>, Repository<CustomerModel>>();
+          
 
             services.AddSwaggerGen(c =>
             {
@@ -70,6 +68,7 @@ namespace DotinBankProject.Api
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

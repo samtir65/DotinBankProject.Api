@@ -1,6 +1,7 @@
 ﻿namespace DotinBankProject.Domain.Models.Entities.Base
 {
-    public abstract class TEntity : EntityBase<int>
+    public  class Entity
     {
+        public int Id { get; set; }
     }
 }

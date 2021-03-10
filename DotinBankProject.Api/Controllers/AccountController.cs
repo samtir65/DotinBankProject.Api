@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
-using DotinBankProject.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Text.Json;
+using System.Threading;
+using DotinBankProject.Application.Features.Account.Commands;
 using DotinBankProject.Application.Models.Dtos;
-using DotinBankProject.Application.Models.Parameters;
 using DotinBankProject.Domain.Models.Entities;
 using DotinBankProject.Domain.Repositories.Base;
+using DotinBankProject.Application.Models;
+using MediatR;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,88 +18,98 @@ namespace DotinBankProject.Api.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly IRepository<Account> _repositoryAccount;
-        private IMapper _mapper;
-        public AccountController(IRepository<Account> repositoryAccount,IMapper mapper)
+        //private readonly IRepository<Account> _repositoryAccount;
+        //private readonly IMapper _mapper;
+        private readonly IMediator _mediator;
+       // private readonly ILogger _logger;
+
+        public AccountController(IMediator mediator)
         {
-            _repositoryAccount = repositoryAccount;
-             _mapper = mapper;
-            _mapper = new Mapper(new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<CustomerModel, RealCustomer>().ReverseMap();
-                
-            }));
+            _mediator = mediator;
+            //_repositoryAccount = repositoryAccount;
+           // _logger = logger;
+            //_mapper = mapper;
         }
         // GET: api/<AccountController>
-        [HttpGet]
-        public IActionResult Get()
-        {
-            IEnumerable<Account> accounts = _repositoryAccount.GetAll();
+        //[HttpGet]
+        //public IActionResult Get()
+        //{
+        //    _logger.LogInformation(null,"",);
+        //    var accounts = _repositoryAccount.GetAsync();
 
-            AccountDto accountDto = _mapper.Map<AccountDto>(accounts);
-            
-            return Ok(accountDto);
-        }
+        //    var accountDto = _mapper.Map<IEnumerable<AccountDto>>(accounts);
+
+        //    return Ok(accountDto);
+        //}
 
         // GET api/<AccountController>/5
-        [HttpGet("{id}")]
-        public IActionResult Get(int id)
-        {
-            Account account = _repositoryAccount.Get(id);
-            if (account == null)
-            {
-                return NotFound("The account record couldn't be found.");
+        //[HttpGet("{id}")]
+        //public IActionResult Get(int id)
+        //{
+        //    var account = _repositoryAccount.GetAsync(id);
+        //    if (account == null)
+        //    {
+        //        return NotFound("The account record couldn't be found.");
 
-            }
-            var res = JsonSerializer.Serialize(account, null);
+        //    }
 
-            return Ok(res);
-        }
+        //    var accountDto = _mapper.Map<AccountDto>(account);
+
+
+        //    return Ok(accountDto);
+        //}
 
         // POST api/<AccountController>
-        [HttpPost]
-        public IActionResult Post([FromBody] Account account)
-        {
-            if (account == null)
-            {
-                return BadRequest("account is Null");
-            }
-            _repositoryAccount.Add(account);
-            return Ok();
-        }
+        //[HttpPost]
+        //public IActionResult Post([FromBody] AccountModel account)
+        //{
+        //    if (account == null)
+        //    {
+        //        return BadRequest("account is Null");
+        //    }
+
+        //    var entity = _mapper.Map<AccountModel>(account);
+        //    _repositoryAccount.AddAsync(entity);
+        //    return Ok();
+        //}
 
         // PUT api/<AccountController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Account account)
+        public IActionResult Put(int id, [FromBody] UpdateAccountCommand command,CancellationToken cancellationToken)
         {
-            if (account == null)
+            var response = _mediator.Send(command, cancellationToken);
+            if (response == null)
             {
-                return BadRequest("account is null");
+                return BadRequest();
             }
-            Account accounttoUpdate = _repositoryAccount.Get(id);
-            if (accounttoUpdate == null)
-            {
-                return NotFound("accounttoUpdate could not be found");
 
-            }
-            _repositoryAccount.Save();
-            return NoContent();
+            return Ok(response);
+            //if (id != accountModel.Id)
+            //{
+            //    return BadRequest();
+            //}
+
+            //var entiity = _mapper.Map<Account>(accountModel);
+            //_repositoryAccount.Update(entiity);
+            // _repositoryAccount.Save();
+
+            //return Ok();
 
         }
 
         // DELETE api/<AccountController>/5
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            Account account = _repositoryAccount.Get(id);
-            if (account == null)
-            {
-                return NotFound();
-            }
-            _repositoryAccount.Remove(account);
-            _repositoryAccount.Save();
-            return NoContent();
+        //[HttpDelete("{id}")]
+        //public IActionResult Delete(int id)
+        //{
+        //    Account account = _repositoryAccount.Get(id);
+        //    if (account == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    _repositoryAccount.Remove(account);
+        //    _repositoryAccount.Save();
+        //    return NoContent();
 
-        }
+        //}
     }
 }

@@ -2,6 +2,7 @@ using DotinBankProject.Data.Data.Mapping;
 using DotinBankProject.Domain.Models.Entities;
 using DotinBankProject.Domain.Models.Entities.Enums;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace DotinBankProject.Data.Data
 {
@@ -18,6 +19,12 @@ namespace DotinBankProject.Data.Data
         public virtual DbSet<Branch> Branches { get; set; }
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<AccountType> AccountTypes { get; set; }
+
+        internal object Find(Func<object, bool> p)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual DbSet<AccountingDocument> AccountingDocuments { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
        

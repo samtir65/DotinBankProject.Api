@@ -134,3 +134,5 @@ C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankPr
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\DotinBankProject.Domain.dll
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\DotinBankProject.Domain.pdb
 C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\DotinBankProject.Data.pdb
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\MediatR.dll
+C:\Users\Samira\Desktop\Barnamenevisi2020\Dotin\DotinBankProject.Api\DotinBankProject.Api\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

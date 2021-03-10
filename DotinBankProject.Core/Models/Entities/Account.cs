@@ -4,7 +4,7 @@ using DotinBankProject.Domain.Models.Entities.Base;
 
 namespace DotinBankProject.Domain.Models.Entities
 {
-    public class Account:TEntity
+    public class Account:Entity
     {
         public Account()
         {

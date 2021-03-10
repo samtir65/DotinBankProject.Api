@@ -5,7 +5,7 @@ using DotinBankProject.Domain.Models.Entities.Enums;
 
 namespace DotinBankProject.Domain.Models.Entities
 {
-    public abstract class Customer:TEntity
+    public abstract class Customer:Entity
     {
        
         public Customer()
