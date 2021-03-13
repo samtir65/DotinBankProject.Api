@@ -1,7 +1,10 @@
 ﻿using System;
+using DotinBankProject.Application.Validators;
+
 
 namespace DotinBankProject.Application.Models
 {
+    //[Validator(typeof(AccountModelValidator))]
     public class AccountModel
     {
        

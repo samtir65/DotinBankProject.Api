@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using DotinBankProject.Application.Models;
@@ -11,7 +7,7 @@ using DotinBankProject.Domain.Repositories.Base;
 
 namespace DotinBankProject.Application.AccountServices
 {
-    class AccountService
+    public class AccountService:IAccountService
     {
         private readonly IRepository<Account> _repositoryAccount;
         private readonly IMapper _mapper;
@@ -23,14 +19,11 @@ namespace DotinBankProject.Application.AccountServices
             _mapper = mapper;
         }
 
-        public async Task<AccountModel> GetAllAccountAsync(int id)
+        public async Task<AccountModel> GetAccountAsync(int id)
         {
-            if (id<=0 )
-            {
-                throw  new ApplicationException("Account Id Should not be 0 or lower....");
-            }
             var accountResult=  await _repositoryAccount.GetAsync(id);
-            return _mapper.Map<AccountModel>(accountResult); 
+            var result = _mapper.Map<AccountModel>(accountResult);
+            return result;
         }
     }
 

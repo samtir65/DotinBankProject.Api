@@ -1,7 +1,9 @@
+using System;
 using System.Reflection;
+using DotinBankProject.Application.AccountServices;
 using DotinBankProject.Application.MappingProfiles;
 using DotinBankProject.Data.Data;
-using DotinBankProject.Data.Data.Services.Base;
+using DotinBankProject.Data.Data.Repositories.Base;
 using DotinBankProject.Domain.Models.Entities;
 using DotinBankProject.Domain.Repositories.Base;
 using MediatR;
@@ -29,7 +31,7 @@ namespace DotinBankProject.Api
         {
             services.AddDbContextPool<DotinBankContext>(builder => { builder.UseSqlServer(Configuration.GetConnectionString("BankConnectionString")); });
             services.AddAutoMapper(typeof(MappingProfile));
-            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddScoped<IRepository<RealCustomer>, Repository<RealCustomer>>();
             services.AddScoped<IRepository<LegalCustomer>, Repository<LegalCustomer>>();
@@ -40,7 +42,11 @@ namespace DotinBankProject.Api
             services.AddScoped<IRepository<AccountingDocument>, Repository<AccountingDocument>>();
             services.AddScoped<IRepository<AccountType>, Repository<AccountType>>();
             services.AddScoped<IRepository<Branch>, Repository<Branch>>();
-          
+            services.AddScoped<IAccountService,AccountService>();
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
+
 
             services.AddSwaggerGen(c =>
             {

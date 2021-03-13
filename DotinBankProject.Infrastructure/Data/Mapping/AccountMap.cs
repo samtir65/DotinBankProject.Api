@@ -14,12 +14,16 @@ namespace DotinBankProject.Data.Data.Mapping
 
             // key
             builder.HasKey(t => t.Id);
+            
+                
+                
 
             // properties
             builder.Property(t => t.Id)
                 .IsRequired()
                 .HasColumnName("Id")
-                .HasColumnType("int");
+                .HasColumnType("int")
+                ;
 
             builder.Property(t => t.AccountNumber)
                 .IsRequired()

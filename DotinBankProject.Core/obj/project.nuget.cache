@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0eON0udZs0lEwUIG4+yTwqHqLjKCG4uOie5KAHHQQtVzu7Pe3DAxaG4TGKsx1VzMaxJ0lFDURr6+ALyST+QSVA==",
+  "dgSpecHash": "9ug97BHDvRyq6tmItsdMVl/6adS36uJgmdDKH9H15qdGrMWCFgRQixuo/GyG2XWKyK2E53rdKbyrjHKp+1PtLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samira\\Desktop\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\Barnamenevisi2020\\Dotin\\DotinBankProject.Api\\DotinBankProject.Core\\DotinBankProject.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Samira\\.nuget\\packages\\fluentvalidation\\9.5.2\\fluentvalidation.9.5.2.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.2\\fluentvalidation.aspnetcore.9.5.2.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.5.2\\fluentvalidation.dependencyinjectionextensions.9.5.2.nupkg.sha512",
+    "C:\\Users\\Samira\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
